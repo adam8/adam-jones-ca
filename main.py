@@ -9,6 +9,9 @@ class PostUpdate(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/plain'
         self.response.write('This should be a post (I mean GET) from browser')
+    def post(self):
+        self.response.headers['Content-Type'] = 'text/plain'
+        self.response.write('success POST, i think from gmail')
 
 app = webapp2.WSGIApplication([
     ('/post', PostUpdate),
