@@ -6,11 +6,11 @@ class MainPage(webapp2.RequestHandler):
         self.response.write('Hello again from my phone, World! 123')
 
 class PostUpdate(webapp2.RequestHandler):
-    def post(self);
+    def get(self);
         self.response.headers['Content-Type'] = 'text/plain'
-        self.response.write('This should be a post from gmail')
+        self.response.write('This should be a post (I mean GET) from browser')
 
 app = webapp2.WSGIApplication([
-    ('post', PostUpdate),
-    ('/', MainPage),
+    ('/post', PostUpdate),
+    ('/', MainPage)
 ], debug=True)
