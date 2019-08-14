@@ -13,7 +13,11 @@ class PostUpdate(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/plain'
         self.response.write('success POST, i think from gmail')
 
+class Watch(webapp2.RequestHandler);
+    def post(self):
+      
+
 app = webapp2.WSGIApplication([
-    ('/post', PostUpdate),
+    ('/post123', PostUpdate),
     ('/', MainPage)
 ], debug=True)
