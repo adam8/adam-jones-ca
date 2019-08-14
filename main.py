@@ -11,6 +11,6 @@ class PostUpdate(webapp2.RequestHandler):
         self.response.write('This should be a post from gmail')
 
 app = webapp2.WSGIApplication([
-    ('post', postUpdate),
+    ('post', PostUpdate),
     ('/', MainPage),
 ], debug=True)
