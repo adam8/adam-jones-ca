@@ -6,14 +6,12 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
-# test
-
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/plain'
-        self.response.write('Hello 123')
+        self.response.write('Hello 123. CodeSandBox.io')
 
 class PostUpdate(webapp2.RequestHandler):
     def get(self):
@@ -23,7 +21,7 @@ class PostUpdate(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/plain'
         self.response.write('success POST, i think from gmail')
 
-class Watch(webapp2.RequestHandler);
+class Watch(webapp2.RequestHandler):
   def get(self):
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
