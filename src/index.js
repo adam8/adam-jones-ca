@@ -9,9 +9,9 @@ function App() {
       <div>
         <h1>Adam Skye Jones</h1>
         <p>
-          Feet on the ground,
+          Feet on the ground
           <br />
-          Head in the cloud
+          Head in the cloud...
         </p>
       </div>
     </div>
