@@ -11,7 +11,7 @@ function App() {
         <p>
           Feet on the ground,
           <br />
-          Head in the cloud
+          Head in the cloud.
         </p>
       </div>
     </div>
